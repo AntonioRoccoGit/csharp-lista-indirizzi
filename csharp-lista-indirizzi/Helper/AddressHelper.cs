@@ -27,11 +27,11 @@ namespace csharp_lista_indirizzi.Helper
                 address.Street = RemoveNullString(array[array.Length - 4]);
                 address.City = RemoveNullString(array[array.Length - 3]);
             }
-            return address;
-            
-        }
 
-        private static string RemoveNullString(string _string)
+            return address;
+        }
+            
+        private static string RemoveNullOrEmptyString(string _string)
         {
             if (_string == "")
                 return "Nessun Dato";

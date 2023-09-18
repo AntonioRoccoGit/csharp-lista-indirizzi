@@ -37,7 +37,7 @@ namespace csharp_lista_indirizzi
 
             foreach (var item in addresses)
             {
-                Console.WriteLine(item.ToString());
+                Console.WriteLine(item);
             }
 
             Console.ReadLine();
