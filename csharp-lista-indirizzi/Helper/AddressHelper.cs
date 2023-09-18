@@ -33,9 +33,8 @@ namespace csharp_lista_indirizzi.Helper
             
         private static string RemoveNullOrEmptyString(string _string)
         {
-            if (_string == "")
+            if(string.IsNullOrEmpty(_string))
                 return "Nessun Dato";
-
             return _string;
         }
     }
